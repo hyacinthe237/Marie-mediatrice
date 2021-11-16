@@ -11,8 +11,8 @@
         <div class="_overlay">
             <div class="v-align-center">
                 <div class="v-align-center-content">
-                    <h3>Cameroonian Association of Australia</h3>
-                    <h4 class="mt-20">Sydney Chapter</h4>
+                    <h3>Sanctuaire Marie Médiatrice d'Etoudi</h3>
+                    <h4 class="mt-20">Yaoundé, Cameroon</h4>
                 </div>
             </div>
         </div>

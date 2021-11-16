@@ -23,9 +23,11 @@
 
 <div id="app">
     @include('errors.list')
-    @include('front.includes.nav', 
+    @include('front.includes.first-nav')
+    @include('front.includes.nav',
         ['fixed' => false, 'shadow' => false]
     )
+    @include('front.includes.menu')
 
     @yield('body')
     @include('front.includes.footer')
