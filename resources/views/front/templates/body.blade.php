@@ -23,11 +23,13 @@
 
 <div id="app">
     @include('errors.list')
-    @include('front.includes.first-nav')
-    @include('front.includes.nav',
-        ['fixed' => false, 'shadow' => false]
-    )
-    @include('front.includes.menu')
+    <div class="container-fluid">
+        @include('front.includes.first-nav')
+        @include('front.includes.nav',
+            ['fixed' => false, 'shadow' => false]
+        )
+        @include('front.includes.menu')
+    </div>
 
     @yield('body')
     @include('front.includes.footer')
