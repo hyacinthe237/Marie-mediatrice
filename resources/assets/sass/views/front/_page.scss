@@ -1,0 +1,249 @@
+._page {
+    padding-bottom: 60px;
+    font-family: 'PT Sans', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    margin-top:55px;
+
+    .container {
+        > h1, > h2, > h3, > h4 {
+            margin: 0;
+            margin-bottom: 0 !important;
+        }
+    }
+
+
+    .events {
+        .event {
+            background-color: white;
+            width: 100%;
+            padding: 10px;
+            // margin-bottom: 10px;
+            border-radius: 3px;
+            border-bottom: 1px solid #ececec;
+            font-size: 17px;
+
+            .date {
+                font-size: 15px;
+                font-weight: bold;
+                color: $brand-wise;
+            }
+
+            .title { font-weight: bold; margin-bottom: 0px }
+            .meta {
+                color: $brand-wise-dark;
+                font-weight: 600;
+                font-size: 15px;
+                @include ellipsis;
+                font-family: 'Source Sans Pro', Calibri, sans-serif;
+
+                i { font-size: 16px; margin-right: 5px }
+            }
+
+            &.past {
+                background-color: #f3f3f3;
+            }
+        }
+    }
+
+    .tabs {
+        width: 100%;
+        font-size: 19px;
+        position: relative;
+        display: block;
+        padding:0;
+        border-bottom: 1px solid #e0e0e0;
+        transition: border-bottom 0.5s ease;
+        display: flex;
+        background-color: $brand-success;
+
+        .tab {
+            position: relative;
+            display:inline-block;
+            text-decoration: none;
+            padding: 10px;
+            text-transform: uppercase;
+            font-size: 16px;
+            font-weight: 600;
+            color: #fff;
+            // color: #424f5a;
+            text-align: center;
+            outline: none;
+            flex: 1;
+
+            &.active {
+                border-bottom: 2px solid $tabActiveBorder;
+            }
+        }
+    }
+
+
+    .search-container {
+        position: fixed;
+        left: 0;
+        top: 0;
+        width: 100%;
+        z-index: 9;
+        padding: 8px;
+        background-color: $brand-success;
+        transition: all 2s ease;
+
+        ._close {
+            text-align: right;
+            width: 100%;
+            font-size: 25px;
+            text-align: center;
+            color: white;
+            line-height: 25px;
+            padding-top: 5px;
+        }
+
+        .input-lg {
+            height: 40px;
+            padding: 8px 13px;
+        }
+
+        .form-control {
+            &:focus {
+                border:none;
+            }
+        }
+    }
+}
+
+
+._section {
+    width: 100%;
+    position: relative;
+
+    .home-header {
+        width: 100%;
+        height: 600px;
+        color: white;
+        background-size: cover;
+        background-image: url(/assets/img/bg.jpeg);
+        background-repeat: no-repeat;
+        background-position: center;
+        text-align: center;
+    }
+
+    .home-mission {
+        .text {
+            font-size: 17px;
+            line-height: 26px;
+            color: $brand-teal;
+        }
+    }
+
+    .home-news {
+        .home-news-item {
+            background-color: white;
+            box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            margin-bottom: 20px;
+            height: 240px;
+            overflow: hidden;
+        }
+
+        h4 { 
+            color: $red;
+            line-height: 33px;
+        }
+
+        .text {
+            font-size: 16px;
+        }
+    }
+
+    .home-events {
+        .home-events-item {
+            width: 100%;
+            background-color: white;
+            position: relative;
+            margin-bottom: 40px;
+
+            .date {
+                background-color: $red;
+                position: absolute;
+                text-align: center;
+                border-radius: 4px;
+                padding: 5px 0;
+                color: white;
+                width: 60px;
+                top: 0;
+                left: 0;
+
+                .day {
+                    font-size: 30px;
+                    font-weight: 500;
+                    line-height: 32px;
+                }
+            }
+
+            .content {
+                padding-left: 80px;
+
+                .title {
+                    font-size: 18px;
+                    font-weight: 600;
+                }
+
+                .host {
+                    color: $brand-teal;
+                }
+
+                .mini {
+                    color: $brand-teal;
+                    font-size: 14px;
+                }
+            }
+        }
+
+        .home-events-activity {
+            img { border-radius: 4px }
+
+            h5 { 
+                color: $red;
+                font-size: 20px;
+            }
+        }
+    }
+
+    .home-sponsors {
+        width: 100%;
+
+        .home-sponsors-list {
+            overflow-x: scroll;
+            overflow-y: hidden;
+            white-space: nowrap;
+
+            .home-sponsors-list-item {
+                margin-right: 0;
+                text-align: center;
+                width: 220px;
+                display: inline-block;
+
+                img { 
+                    height: 120px;
+                    margin: 0 auto;
+                }
+            }
+        }
+    }
+
+    .home-contact {
+        .contact-person {
+            width: 100%;
+            text-align: center;
+
+            img {
+                width: 250px;
+                border-radius: 50%;
+            }
+
+            .names {
+                font-size: 18px;
+            }
+        }
+    }
+}                                                           

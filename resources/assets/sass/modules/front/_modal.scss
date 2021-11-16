@@ -1,0 +1,37 @@
+._modal {
+    > .modal {
+        .modal-dialog {
+            margin: 0;
+            width: 100%;
+        }
+
+        .modal-content {
+            border:none;
+            border-radius: 0;
+            box-shadow: none;
+            height: 100vh;
+            overflow-x: scroll;
+            background-color: $body-bg;
+        }
+
+        .modal-heading {
+            height: 50px;
+            background-color: $brand-success;
+            color: white;
+            padding: 0 20px;
+            line-height: 50px;
+            font-size: 1.1em;
+            box-shadow: 1px 4px 1px rgba(0,0,0,0.08);
+            position: fixed;
+            top:0;
+            left:0;
+            width:100%;
+            z-index: 5;
+        }
+
+        .modal-body {
+            padding-bottom: 40px;
+            padding-top: 60px;
+        }
+    }
+}

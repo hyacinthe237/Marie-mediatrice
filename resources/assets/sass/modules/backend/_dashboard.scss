@@ -1,0 +1,156 @@
+.dashboard {
+    padding: 20px;
+
+    .cards {
+        .card {
+            text-align: center;
+            padding: 20px 0;
+            color: white;
+            border-radius: 3px;
+            margin-bottom: 10px;
+            font-weight: 300;
+            font-family: 'Source Sans Pro', Cabin, sans-serif;
+
+            h3 {
+                font-size: 1.5em;
+            }
+
+            i {
+                font-size: 35px;
+            }
+
+            &.blue {
+                background-color: #3080ff;
+            }
+            &.green {
+                background-color: $brand-success;
+            }
+            &.dark {
+                background-color: $brand-font;
+            }
+            &.red {
+                background-color: $brand-danger;
+            }
+
+            &.purple {
+                background-color: $brand-purple;
+            }
+
+            &.grey {
+                background-color: #edf1f7;
+                color: $brand-font;
+            }
+
+            &.primary {
+                background-color: $brand-primary;
+            }
+
+            &.info {
+                background-color: $brand-info;
+            }
+
+            &.wise {
+                background-color: $brand-wise;
+            }
+        }
+    }
+
+
+
+    .table {
+        font-family: 'Product Sans', Averta, 'Source Sans Pro', sans-serif;
+
+        > thead {
+            > tr {
+                > th {
+                    border-bottom: 1px solid #e8ecf3;
+                    line-height: 1.5;
+                    font-size: 1.1em;
+                    font-weight: 500;
+                    color: $titleColour;
+                    font-family: Cabin, sans-serif;
+                }
+            }
+        }
+
+        >tbody {
+            > tr {
+                > td {
+                    font-weight: 400;
+                    font-size: 15px;
+
+                    a {
+                        color: $titleColour;
+
+                        &.edit-icon { color: white }
+
+                        &.delete-icon { color: white }
+                    }
+
+                    &:last-child {
+                        text-align: left;
+                    }
+                }
+            }
+        }
+    }
+
+    .edit-icon {
+        padding: 7px 10px;
+        border-radius: 4px;
+        background-color: $titleColour;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+    .delete-icon {
+        padding: 7px 10px;
+        border-radius: 4px;
+        background-color: $brand-danger;
+        cursor: pointer;
+        color: white;
+
+        &:hover {
+            text-decoration: none;
+        }
+    }
+
+    .edition-categories {
+        h5 {
+            font-family: 'PT Sans', 'Source Sans', Calibri, sans-serif;
+            font-weight: 500;
+        }
+
+        .card {
+            width: 100%;
+            background-color: $body-bg;
+            padding: 10px;
+            border-radius: 4px;
+            border: 1px solid #f0f1f0;
+            cursor: pointer;
+            margin-bottom: 10px;
+
+            img {
+                width: 40px;
+                border-radius: 50%;
+                float: left;
+                margin-right: 10px;
+            }
+
+            .name {
+                font-size: 16px;
+                @include ellipsis;
+            }
+
+            .likes {
+                color: $brand-teal;
+                font-size: 13px;
+                font-weight: 500;
+                font-family: sans-serif;
+            }
+        }
+    }
+}

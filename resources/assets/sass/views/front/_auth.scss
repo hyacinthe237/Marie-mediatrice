@@ -1,0 +1,57 @@
+._view-auth {
+
+    .mobile-container {
+        width: 100%;
+        max-width: 400px;
+        height: 100vh;
+        max-height: 800px;
+        margin: 0 auto;
+        margin-top: 80px;
+        position: relative;
+        background-image: url('/assets/img/mobile.jpg');
+        background-position: right;
+        background-size: cover;
+        background-repeat: no-repeat;
+        box-shadow: 2px 6px 6px rgba(0,0,0,0.2);
+
+        .mobile-inner {
+            padding: 20px;
+            z-index: 2;
+            position: relative;
+        }
+
+        .auth-logo {
+            color: white;
+            font-size: 2.1em;
+            text-align: center;
+            margin-top: 60px;
+            margin-bottom: 5px;
+            text-transform: uppercase;
+            font-family: 'Source Sans Pro', 'Libre Franklin';
+            font-weight: bold;
+        }
+
+        @media (min-width: $screen-xs) {
+            max-height: 700px;
+
+            .auth-logo {
+                margin-top: 200px;
+            }
+        }
+
+        @media (max-width: $screen-xs) {
+            margin-top: 0;
+            height: 100vh;
+        }
+    }
+
+
+
+
+    ._form {
+        label {
+            color: #eee;
+            font-weight: 500;
+        }
+    }
+}

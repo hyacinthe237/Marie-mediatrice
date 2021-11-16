@@ -1,0 +1,102 @@
+
+// Body
+$body-bg: #f5f8fa;
+
+// Borders
+$laravel-border-color: darken($body-bg, 10%);
+$list-group-border: $laravel-border-color;
+$navbar-default-border: $laravel-border-color;
+$panel-default-border: $laravel-border-color;
+$panel-inner-border: $laravel-border-color;
+
+// colors
+$blue:    #1B3C71 ;
+$indigo:  #6610f2 ;
+$purple:  #735996 ;
+$pink:    #e83e8c ;
+$red:     #f32f55 ;
+$orange:  #FF6900 ;
+$yellow:  #ffc107 ;
+$green:   #037d70 ;
+$teal:    #20c997 ;
+$cyan:    #7C9FC1 ;
+
+// Brands
+$brand-primary:     $green;
+$brand-secondary:   $blue;
+$brand-info:        #1B3C71;
+$brand-success:     #037d70;
+$brand-warning:     #0a0a09;
+$brand-danger:      #f32f55;
+$brand-teal:        #636d7e;
+$brand-presumi:     #007fff;
+$brand-orange:      #fa5b49;
+$brand-dark:        #353847;
+$brand-darker:      #232c32;
+$brand-dark-light:  #4a5568;
+$brand-wise:        #38548b;
+$brand-wise-dark:   #304773;
+$brand-grey:        #f5f8fa;
+$brand-greyer:      #777F8E;
+$brand-purple:      #735996;
+$brand-bordo:       #a92727;
+$brand-active:      #e9b609;
+$brand-success-dark:#00553d;
+
+$brand-primary-dark:    #523875;
+$brand-secondary-dark:  #172e5d;
+$brand-remit-dark:      #2e4662;
+
+$primary:       $brand-primary;
+$secondary:     $brand-secondary ;
+$success:       $green ;
+$info:          $cyan ;
+$warning:       $yellow ;
+$danger:        $red ;
+
+// Typography
+$font-family-sans-serif: "Lato", sans-serif;
+$font-familly-app: 'Product Sans', 'Averta', 'Source Sans Pro', 'Calibri', sans-serif;
+$font-size-base: 14px;
+$line-height-base: 1.6;
+$text-color: #636b6f;
+
+// Navbar
+$navbar-default-bg: #fff;
+
+// Buttons
+$btn-default-color: $text-color;
+
+// Inputs
+$input-border: lighten($text-color, 40%);
+$input-border-focus: lighten($brand-primary, 25%);
+$input-color-placeholder: lighten($text-color, 30%);
+
+// Panels
+$panel-default-heading-bg: #fff;
+
+// Colours
+$linkColour: $brand-primary;
+$linkHoverBackgroundColour: $brand-dark-light;
+$primaryColour: $brand-presumi;
+$secondaryColour: $brand-success;
+$navColour: $primary;
+$fontColour: $brand-dark;
+$navBackgroundColour: white;
+$navActiveBackgroundColour: $brand-wise;
+$navHoverColour: #f9f9f9;
+$tabActiveBorder: $brand-success-dark;
+$navHoverBackgroundColour: white;
+$navActiveFontColour: white;
+$footerBackground: $brand-wise-dark;
+$navToggle: $brand-darker;
+$navLinkColour: white;
+$navToggle: $brand-darker;
+$navTransparentLinkColour: white;
+$navTransparentLinkActiveColour: $brand-warning;
+$sidebarLinkColour: $brand-wise;
+
+$navbar-height: 50px;
+$sidebar-width: 200px;
+
+$mobile-breakpoint: 560px;

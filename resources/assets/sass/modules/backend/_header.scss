@@ -1,0 +1,49 @@
+._header {
+    width: 100%;
+    background-color: white;
+    padding: 30px 20px;
+    padding-top: 10px;
+    border-bottom: 1px solid #e8ecf3;
+
+    .title {
+        color: $titleColour;
+        font-size: 1.2em;
+        i { margin-left: 10px; font-size: 22px }
+    }
+
+    .buttons {
+        .search-form {
+            width: 80%;
+            max-width: 250px;
+            margin-right: 20px;
+
+            input {
+                border-radius: 2px;
+                background-color: #e8ecf3;
+                border: 1px solid #e0e5e6;
+                box-shadow: none;
+                color: $brand-dark;
+                font-size: 14px;
+                padding: 6px 20px;
+
+                &:focus {
+                    outline: 0;
+                    border: 1px solid #d0e5e6;
+                }
+            }
+        }
+    }
+}
+
+
+._subheader {
+    padding: 0 20px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e8ecf3;
+
+    label {
+        color: $titleColour;
+        font-size: 14px;
+        font-weight: 500;
+    }
+}

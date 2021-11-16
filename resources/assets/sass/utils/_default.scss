@@ -1,0 +1,121 @@
+* { margin: 0; padding: 0 }
+a { text-decoration: none; color: $linkColour }
+
+@font-face {
+    font-family: "Averta";
+    src: url("/assets/fonts/averta/AvertaDemo-Regular.otf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Product Sans";
+    src: url("/assets/fonts/products/ProductSans-Regular.woff");
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Averta, 'Product Sans', sans-serif;
+    background-color: $body-bg;
+    font-size: 16px;
+    color: $fontColour;
+}
+
+h1,h2,h3,h4 { margin: 0 }
+h1 { font-size: 3em }
+h2 { font-size: 2.4em }
+h3 { font-size: 2em }
+h4 { font-size: 1.5em }
+h5 { font-size: 1.1em; }
+
+.bold { font-weight: bold }
+.white { color: white }
+.teal { color: $brand-teal }
+.red { color: $brand-danger }
+.green { color: $brand-success }
+.primary { color: $brand-primary }
+.elevated { box-shadow: 2px 8px 20px rgba(0, 0, 0, 0.2) }
+.w-100 { width: 100px }
+.w-150 { width: 150px }
+.w-200 { width: 200px }
+.w-250 { width: 250px }
+.w-300 { width: 300px }
+.fw-300 { font-weight: 300 }
+.fw-500 { font-weight: 500 }
+.fw-600 { font-weight: 600 }
+.pointer { cursor: pointer }
+.text-right { text-align: right }
+.bg-white { background-color: white }
+.margin-0 { margin: 0 }
+
+.btn { border-radius: 2px }
+.btn-teal { background-color: $brand-teal; color: white }
+.btn-dark { background-color: $brand-dark; color: white }
+.btn-wise { background-color: $brand-wise; color: white }
+.btn-presumi { background-color: $brand-presumi; color: white }
+.btn-round { border-radius: 500px }
+.btn:focus { outline: none }
+.btn-lg {
+    font-size: 1em;
+    border-radius: 3px;
+    padding: 13px 15px;
+
+    &:hover,
+    &:focus { color: white }
+    i { font-size: 1.2em; margin-right: 5px }
+}
+
+._text {
+    ul {
+        padding-left: 20px;
+    }
+}
+
+._overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(60,71,91, 0.4);
+}
+
+.v-align-center {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+
+    position: relative;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+.links {
+    width: 100%;
+
+    .link {
+        width: 100%;
+        padding: 13px 20px;
+        font-weight: 400;
+        @include ellipsis;
+
+        i { font-size: 18px }
+        &.border-top { border-top: 1px solid #eee }
+        &.border-bottom { border-bottom: 1px solid #eee }
+        &.bold { font-weight: 700 }
+    }
+}
+
+.v-align-center {
+    display: table;
+    width: 100%;
+
+    .v-align-center-content {
+        display: table-cell;
+        vertical-align: middle;
+    }
+}

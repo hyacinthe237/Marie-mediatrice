@@ -1,0 +1,62 @@
+.btn {
+    font-family: Averta, 'Product Sans', 'Source Sans Pro', Calibri, Arial;
+    border-radius: 3px;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-round { border-radius: 50% }
+.btn-radius { border-radius: 500px }
+.btn-radius { border-radius: 500px }
+.btn-teal { background-color: $brand-teal; color: white }
+.btn-teal:hover, .btn-teal:focus { color: #f1f1f1 }
+.btn-dark { background-color: $brand-dark; color: white }
+.btn-wise { background-color: $brand-wise; color: white }
+.btn-presumi { background-color: $brand-presumi; color: white }
+.btn-grey { background-color: $brand-grey; color: white }
+.btn-bordo { background-color: $brand-bordo; color: white }
+.btn-success { background-color: $brand-success; color: white; border-color: $brand-success; }
+.btn:focus { outline: none }
+
+
+.btn-md {
+    padding: 9px 25px;
+    font-weight: 500;
+    font-size: 14px;
+}
+
+.btn-lg {
+    font-size: 16px;
+    border-radius: 3px;
+    padding: 13px 16px;
+    cursor: pointer;
+
+    &:focus {
+        outline: none;
+    }
+}
+
+.btn-xl {
+    padding: 15px 30px;
+    font-size: 18px;
+    line-height: 1.3333333;
+    border-radius: 3px;
+}
+
+.btn-facebook,
+.btn-facebook.active,
+.btn-facebook:focus,
+.btn-facebook:hover {
+    background-color: #4267b2;
+    color: white
+}
+
+.btn-google,
+.btn-google.active,
+.btn-google:focus,
+.btn-google:hover {
+    background-color: #DB4437;
+    color: white
+}
