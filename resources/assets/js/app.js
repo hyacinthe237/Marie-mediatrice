@@ -1,32 +1,28 @@
-/**
- * First we will load all of this project's JavaScript dependencies which
- * includes Vue and other libraries. It is a great starting point when
- * building robust, powerful web applications using Vue and Laravel.
- */
+window.Vue = require('vue')
+window.eventBus = new Vue()
 
-require('./bootstrap');
+import store from './front/store/store'
+import router from './front/router'
+import sweet from './plugins/sweet'
+import toastr from './plugins/toastr'
 
-window.Vue = require('vue');
+require('./bootstrap')
+require('./filters')
+require('./mixins')
+require('./ui')
 
-/**
- * The following block of code may be used to automatically register your
- * Vue components. It will recursively scan this directory for the Vue
- * components and automatically register them with their "basename".
- *
- * Eg. ./components/ExampleComponent.vue -> <example-component></example-component>
- */
+Vue.use(sweet)
+Vue.use(toastr)
 
-// const files = require.context('./', true, /\.vue$/i);
-// files.keys().map(key => Vue.component(key.split('/').pop().split('.')[0], files(key).default));
+Vue.component('core', require('./front/core'))
+Vue.component('auth-login', require('./front/views/auth/login'))
+Vue.component('Navbar', require('./front/components/nav/nav'))
+Vue.component('Spinner', require('./front/components/loaders/spinner'))
 
-Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-
-/**
- * Next, we will create a fresh Vue application instance and attach it to
- * the page. Then, you may begin adding components to this application
- * or customize the JavaScript scaffolding to fit your unique needs.
- */
+Vue.config.ignoredElements = [/^ion-/]
 
 const app = new Vue({
     el: '#app',
-});
+    store,
+    router
+})
