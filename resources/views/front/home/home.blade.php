@@ -1,7 +1,7 @@
 @extends('front.templates.body')
 
 @section('head')
-    <title>Cameroonian Association of Australia | CAA Sydney</title>
+    <title>Sanctuaire Marie Médiatrice d'Etoudi</title>
 @endsection
 
 
