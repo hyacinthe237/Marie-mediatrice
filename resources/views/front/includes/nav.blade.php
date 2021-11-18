@@ -5,14 +5,14 @@
       </div>
       <div class="col-sm-9">
           <div class="items">
-              <div class="item">s'identifier</div>
+              <div class="item pointer">s'identifier</div>
               <div class="item bg">Offrande de messe</div>
               <div class="item bg">faire un don</div>
-              <div class="item bg">Charte sanitaire</div>
-              <div class="item">Incription Newsletter</div>
+              <div class="item charte"><i class="feather icon-file-text"></i>Charte sanitaire</div>
+              <div class="item pointer">Incription Newsletter</div>
               <div class="item bg">déposer un cierge</div>
-              <div class="item bg">intention de prière</div>
-              <div class="item bg">déposer une couronne</div>
+              <div class="item bg"><i class="feather icon-book-open"></i>intention de prière</div>
+              <div class="item bg"><i class="feather icon-award"></i>déposer une couronne</div>
           </div>
       </div>
     </div>
