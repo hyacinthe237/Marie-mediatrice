@@ -1,3 +1,34 @@
-.first-navbar {
-   
+.first-menu {
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    background-color: #EDEDED;
+    //align-items: center;
+    //flex-wrap: wrap;
+
+   .icons {
+      width: 33.33333333333333%;
+
+      ul {
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+        cursor: pointer;
+
+        li {
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 20%;
+            margin-right: 10px;
+        }
+      }
+   }
+
+   .lang {
+      width: 33.33333333333333%;
+   }
+
+   .search {
+      width: 33.33333333333333%;
+   }
 }
